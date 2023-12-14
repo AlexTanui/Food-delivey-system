@@ -94,7 +94,7 @@ const Header = () => {
           <div className="nav__right d-flex align-items-center gap-4">
             {user.role === "admin" ? (
               <Button href="/admin" style={{ textAlign: "center" }}>
-                <p>Panel admina</p>
+                <p>Admin panel</p>
               </Button>
             ) : (
               <></>
@@ -111,17 +111,17 @@ const Header = () => {
                 </Link>
                 <span className="user">
                   <Button onClick={logoutUser}>
-                    <p>Wyloguj się</p>
+                    <p>Log out</p>
                   </Button>
                 </span>
               </>
             ) : (
               <>
                 <Button href="/login">
-                  <p>Logowanie</p>
+                  <p>signin</p>
                 </Button>
                 <Button href="/register">
-                  <p>Rejestracja</p>
+                  <p>sign-up</p>
                 </Button>
               </>
             )}
